@@ -26,7 +26,7 @@ public class ProxySelectorTest {
 				lp.add(new Proxy(Proxy.Type.HTTP,
 						new InetSocketAddress(urlStr,3124) 
 				));
-				return null;
+				return lp;
 			}
 
 			@Override
