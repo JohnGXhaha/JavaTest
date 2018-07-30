@@ -22,7 +22,7 @@ public class ProxySelectorTest {
 
 			@Override
 			public List<Proxy> select(URI uri) {
-				List<Proxy> lp=new ArrayList<>();
+				List<Proxy> lp=new ArrayList();
 				lp.add(new Proxy(Proxy.Type.HTTP,
 						new InetSocketAddress(urlStr,3124) 
 				));
