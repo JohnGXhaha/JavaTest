@@ -3,9 +3,9 @@ package com.classTest.AOP;
 public class BigDog implements Dog{
 
 	@Override
-	public void eat() {
+	public void eat(String food) {
 		// TODO Auto-generated method stub
-		System.out.println("大狗在吃骨头");
+		System.out.println("大狗在吃"+food);
 	}
 
 	@Override

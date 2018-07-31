@@ -6,7 +6,7 @@ public class AOPTest {
 		
 		Dog dog=(Dog)MyProxyFactory.getProxy(target);
 		
-		dog.eat();
+		dog.eat("¹ÇÍ·");
 		dog.run();
 	}
 }
