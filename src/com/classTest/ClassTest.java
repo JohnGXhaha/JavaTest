@@ -1,4 +1,4 @@
-package com.Class;
+package com.classTest;
 
 public class ClassTest {
 	static {
