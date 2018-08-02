@@ -7,7 +7,7 @@ public class MyinvoketionHandle implements InvocationHandler{
 
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		System.out.println("执行的方法为"+method.getName());
+		System.out.println("执行的方法为"+method);
 		
 		if(args!=null) {
 			for(Object val:args) {
