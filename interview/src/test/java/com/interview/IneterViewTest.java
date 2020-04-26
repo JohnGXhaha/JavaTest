@@ -45,8 +45,34 @@ public class IneterViewTest {
 //                .collect(Collectors.toList());
 
         //Function.identity()-->拿到当前循环的对象,这里就是拿到循环出的名字
-        Map<String, Long> collect =  list.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-.entrySet().stream().filter(t->t.getValue()>1).collect((Collectors.toMap(h -> h.getKey(), h -> h.getValue())));
+        Map<String, Long> collect =  list.stream()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+                                    .entrySet().stream()
+                .filter(t->t.getValue()>1).collect((Collectors.toMap(h -> h.getKey(), h -> h.getValue())));
         System.out.println(collect);
+    }
+
+    //递归1 一个整数，大于0，不用循环和本地变量，按照n，2n，4n，8n的顺序递增，当值大于5000时，把值按照指定顺序输出来。
+    @Test
+    public void getDoubleNum(){
+        doubleNum(1272);
+    }
+    public void doubleNum(int n){
+        if(n<=5000)
+            doubleNum(n*2);
+        System.out.println(n);
+    }
+
+//  递归2:  第1个人10，第2个比第1个人大2岁，依次递推，请用递归方式计算出第8个人多大？
+    @Test
+    public void getComputeAge()
+    {
+        System.out.println(computeAge(8));
+    }
+
+    public int computeAge(int n)
+    {
+        if(n==1) return 10;
+        return computeAge(n-1) + 2;
     }
 }
