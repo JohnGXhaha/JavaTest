@@ -16,6 +16,7 @@ public class AppleExtends extends Apple<String> {
 	}
 	
 	
+	@Override
 	public String getInfo(){
 		return "×ÓÀàgetInfo(¸²¸Ç¸¸ÀàgetInfo)"; 
 //		return super.getInfo();

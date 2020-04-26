@@ -5,6 +5,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ThreadPoolTest implements Runnable{
+	@Override
 	public void run(){
 		for(int i=0;i<100;i++){
 			System.out.println(Thread.currentThread().getName()+"µÄiÖµÎª"+i);
