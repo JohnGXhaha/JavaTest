@@ -12,6 +12,6 @@ import java.util.stream.Collectors;
 /**
  * @author GX
  */
-public class IneterViewTest {
+public class IneterView {
 
 }
